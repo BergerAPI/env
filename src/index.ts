@@ -22,7 +22,8 @@ export default function env(file: string = ".env") {
     for (const line of content.split(EOL)) {
         let split = line.split("=");
 
-        if (split.length !== 2 || !isAlphabetic(split[0][0]))
+        if (split.length !== 2 || !isAlphabetic(split[0][0])
+            || Object.prototype.hasOwnProperty.call(process.env, split[0]))
             throw new Error("Failed parsing the env-file. Check if all keys start with an alphabetic character.")
 
         process.env[split[0]] = split[1]
