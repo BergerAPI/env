@@ -1,2 +1,2 @@
 # env
-Simple dotenv clone with extended functionality. 
+Simple dotenv clone with extended functionality.  
