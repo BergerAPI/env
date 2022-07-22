@@ -19,7 +19,7 @@ export default function env(file: string = ".env") {
     const content = fs.readFileSync(path.resolve(process.cwd(), file))
         .toString("utf-8")
 
-    for (const line of content.split(EOL)) {
+    for (const line of content.split(EOL).filter(l => l.trim().length > 0)) {
         let split = line.split("=");
 
         if (split.length !== 2 || !isAlphabetic(split[0][0])
