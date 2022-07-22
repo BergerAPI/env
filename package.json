@@ -1,6 +1,6 @@
 {
-  "name": "env",
-  "version": "1.0.0",
+  "name": "@bergerapi/env",
+  "version": "0.0.1",
   "description": "Simple dotenv clone with extended functionality.",
   "main": "lib/index.js",
   "scripts": {
