@@ -47,4 +47,4 @@ console.log(process.env.TEST);
 env("../postgres.env")
 ```
 
-You can also call this function multiple times to use multiple `.env' files as long as they do not contain variables whose names collide with other variables already defined.
+You can also call this function multiple times to use multiple `.env` files as long as they do not contain variables whose names collide with other variables already defined.
