@@ -27,7 +27,7 @@ TEST=test_string123
 Then add following code to your entry file (e.g. `index.ts`)
 
 ```ts
-import env from "@bergerapi/env";
+import { env } from "@bergerapi/env";
 
 env();
 ```
