@@ -1,4 +1,4 @@
-import env from "../src/index"
+import { env } from "../src/index"
 
 test("tries out a simple env file", () => {
     env()
