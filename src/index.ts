@@ -15,7 +15,7 @@ function isAlphabetic(c: string): boolean {
  * all environment variables into `process.env`
  * @param file the file to parse the environment variables from
  */
-export default function env(file: string = ".env") {
+export function env(file: string = ".env") {
     const content = fs.readFileSync(path.resolve(process.cwd(), file))
         .toString("utf-8")
 
