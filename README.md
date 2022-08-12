@@ -1,6 +1,6 @@
 # env
 
-<img alt="Install Size" src="https://badgen.net/packagephobia/install/@bergerapi/env"/>
+[![install size](https://packagephobia.com/badge?p=@bergerapi/env)](https://packagephobia.com/result?p=@bergerapi/env)
 
 Simple dotenv clone with extended functionality.  
 
