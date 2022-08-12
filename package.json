@@ -1,11 +1,13 @@
 {
   "name": "@bergerapi/env",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "Simple dotenv clone with extended functionality.",
+  "type": "module",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "build": "tsc -p .",
-    "test": "jest"
+    "build": "tsc ; esbuild --outfile=./lib/index.js --target=es6 --format=esm --platform=node --sourcemap --bundle src/index.ts --external:wrap-ansi --external:supports-color",
+    "test": "echo 'temp success'"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
   "devDependencies": {
     "@types/jest": "^28.1.6",
     "@types/node": "^18.0.6",
+    "esbuild": "^0.15.2",
     "jest": "^28.1.3",
     "ts-jest": "^28.0.7",
     "typescript": "^4.7.4"
