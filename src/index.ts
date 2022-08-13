@@ -15,7 +15,7 @@ function isAlphabetic(c: string): boolean {
  * all environment variables into `process.env`
  * @param file the file to parse the environment variables from
  */
-export function env(file: string = ".env") {
+function env(file: string = ".env") {
     const content = fs.readFileSync(path.resolve(process.cwd(), file))
         .toString("utf-8")
 
@@ -29,3 +29,5 @@ export function env(file: string = ".env") {
         process.env[split[0]] = split[1]
     }
 }
+
+export default env;
